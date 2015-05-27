@@ -1,7 +1,7 @@
 {
   "name": "buffet",
   "main": "./lib/buffet",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Buffer switcher/closer/etc",
   "activationCommands": {
     "atom-workspace": "buffet:toggle"
