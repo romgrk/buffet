@@ -2,7 +2,7 @@
 
 @blue-color: #2455c7;
 @strong-blue-color: #0740a2;
-
+@background-color-noselect: #1f1f1f;
 .no-marg-pad-ing() {
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ atom-panel.buffet-panel.modal {
         z-index: 10000;
         transition: all .3s;
         &.transform {
-            // transform: translate3d(0, -50%, -20px) rotateX(90deg) ;
+            transform: translate3d(0, -50%, -20px) rotateX(90deg) ;
             opacity: 0;
         }
 
@@ -60,7 +60,7 @@ atom-panel.buffet-panel.modal {
 
                 &:not(.selected) {
                     // background-color: @button-background-color;
-                    background-color: @background-color-highlight;
+                    background-color: @background-color-noselect;
                 }
 
                 .primary-line {

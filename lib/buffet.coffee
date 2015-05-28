@@ -64,7 +64,7 @@ module.exports = Buffet =
     activePaneChanged: (item) ->
         return unless item instanceof TextEditor
         @previous = @current
-        @current = atom.workspace.getActiveEditor().getBuffer().getUri()
+        @current = atom.workspace.getActiveTextEditor().getBuffer().getUri()
         # if @data[@cwd()]?[@current]?
         #     @data[@cwd()][@current] += 1
         # else
@@ -103,7 +103,7 @@ module.exports = Buffet =
     ###
 
     cwd: ->
-        atom.project.getPath()
+        atom.project.getPaths()[0]
 
     relative: (path) ->
         return Path.relative atom.project.getPath(), path

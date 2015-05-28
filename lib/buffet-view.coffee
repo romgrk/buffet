@@ -170,7 +170,7 @@ class BuffetView extends View
             ''
 
     isCurrent: (buffer) ->
-        buffer.getUri() == atom.workspace.getActiveEditor().buffer.getUri()
+        buffer.getUri() == atom.workspace.getActiveTextEditor().buffer.getUri()
 
     isPrevious: (buffer) ->
         buffer.getUri() == @buffet.previous
